@@ -1,0 +1,27 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+  <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+  <style>
+    body {
+      background: #888;
+    }
+    h1 {
+      font-family: Arial;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Snowy Owls Showing Up In Droves, Winter 2013</h1>
+  <div id="map"></div>
+
+  <script>
+  window.onload = function() {
+    cartodb.createVis('map', 'https://steady.carto.com/api/v2/viz/21540aa0-6b35-11e3-84de-3085a9a9563c/viz.json');
+  }
+
+</script>
+</body>
+</html>
